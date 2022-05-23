@@ -85,7 +85,7 @@ or
 ```sh
 npm start
 ```
-7. Read the QRCode with your phone's camera.
+7. Read the QRCode with your cell phone camera or press "i" on the terminal to open the application in the iPhone emulator or press "a" to open the Android emulator
 
 ## Screenshots
 
