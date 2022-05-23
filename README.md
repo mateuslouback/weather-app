@@ -85,16 +85,7 @@ or
 ```sh
 npm start
 ```
-7. Read the QRCode with your cell phone camera or press "i" on the terminal to open the application in the iPhone emulator or press "a" to open the Android emulator
-
-## Screenshots
-
-<p align="center">
-  <img src="assets/images/screens/screen0.png" width="25%" />
-  <img src="assets/images/screens/screen1.png" width="25%" />
-  <img src="assets/images/screens/screen2.png" width="25%" />
-  <img src="assets/images/screens/screen3.png" width="25%" />
-</p>
+7. Read the QRCode with your cell phone camera or press "i" on the terminal to open the application in the iPhone emulator or press "a" to open the Android emulator.
 
 ## Application tests
 
@@ -110,6 +101,15 @@ yarn test --coverage
 ## Conventional Commits
 In the project, conventional commits was used to type all commits.
 [Click here](https://github.com/facebook/react-native) to learn more about conventional commits.
+
+## Screenshots
+
+<p align="center">
+  <img src="assets/images/screens/screen0.png" width="25%" />
+  <img src="assets/images/screens/screen1.png" width="25%" />
+  <img src="assets/images/screens/screen2.png" width="25%" />
+  <img src="assets/images/screens/screen3.png" width="25%" />
+</p>
 
 
 ## Contact
