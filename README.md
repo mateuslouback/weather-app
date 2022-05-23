@@ -69,6 +69,10 @@ git clone https://github.com/mateuslouback/WeatherApp.git
 ```sh
 yarn install
 ```
+or
+```sh
+npm install
+```
 5. Create an .env file and put the API token obtained from the file in place of your_token in the API_TOKEN property
 ```sh
 API_TOKEN = "token_obtained"
@@ -76,6 +80,10 @@ API_TOKEN = "token_obtained"
 6. Run project on IOS or Android:
 ```sh
 yarn start
+```
+or
+```sh
+npm start
 ```
 7. Read the QRCode with your phone's camera.
 
