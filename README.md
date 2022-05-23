@@ -69,9 +69,9 @@ git clone https://github.com/mateuslouback/WeatherApp.git
 ```sh
 yarn install
 ```
-5. Place the obtained token API in the place indicated below:
+5. Create an .env file and put the API token obtained from the file in place of your_token in the API_TOKEN property
 ```sh
-src/Pages/Main/index.js in the code snippet (const API_ID = "YOUR_API_ID";)
+API_TOKEN = "token_obtained"
 ```
 6. Run project on IOS or Android:
 ```sh
