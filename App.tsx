@@ -1,8 +1,13 @@
 import React, { useEffect } from 'react';
 import { StatusBar } from 'react-native';
+import { ThemeProvider } from 'styled-components/native';
 import * as Updates from 'expo-updates';
 import * as Font from 'expo-font';
 import Routes from './src/routes';
+import PoppinsLight from './assets/fonts/Poppins-Light.ttf';
+import PoppinsRegular from './assets/fonts/Poppins-Regular.ttf';
+import PoppinsSemiBold from './assets/fonts/Poppins-SemiBold.ttf';
+import { theme } from './src/theme';
 
 const App = () => {
   useEffect(() => {
@@ -22,19 +27,18 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    (async () =>
-      await Font.loadAsync({
-        'Poppins-Light': require('./assets/fonts/Poppins-Light.ttf'),
-        'Poppins-Regular': require('./assets/fonts/Poppins-Regular.ttf'),
-        'Poppins-SemiBold': require('./assets/fonts/Poppins-SemiBold.ttf'),
-      }))();
+    Font.loadAsync({
+      'Poppins-Light': PoppinsLight,
+      'Poppins-Regular': PoppinsRegular,
+      'Poppins-SemiBold': PoppinsSemiBold,
+    });
   }, []);
 
   return (
-    <>
-      <StatusBar barStyle="light-content" backgroundColor="#7D40E7" />
+    <ThemeProvider theme={theme}>
+      <StatusBar barStyle="light-content" />
       <Routes />
-    </>
+    </ThemeProvider>
   );
 };
 
