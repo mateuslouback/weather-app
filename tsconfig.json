@@ -12,7 +12,7 @@
     "noEmit": true,
     "strict": false,
     "target": "ESNext",
-    "typeRoots": ["node_modules/@types"]
+    "typeRoots": ["node_modules/@types", "src/@types"]
   },
   "exclude": ["node_modules", "babel.config.js"],
   "extends": "expo/tsconfig.base"
