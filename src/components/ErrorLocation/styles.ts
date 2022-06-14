@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import { CustomText } from '../CustomText';
 
 export const Container = styled.View`
   position: absolute;
@@ -6,23 +7,22 @@ export const Container = styled.View`
   height: 100%;
   justify-content: center;
   align-items: center;
-  background-color: #FFF;
+  background-color: #fff;
   z-index: 10000;
   padding-horizontal: 20px;
 `;
 
-export const ErrorTitle = styled.Text`
+export const ErrorTitle = styled(CustomText)`
   font-size: 20px;
   text-align: center;
-  color: #7E7E7E;
+  color: ${props => props.theme.FONT_DARK_COLOR};
   margin-bottom: 25px;
-  font-weight: bold;
 `;
 
-export const ErrorDescription = styled.Text`
+export const ErrorDescription = styled(CustomText)`
   font-size: 14px;
   text-align: center;
-  color: #7E7E7E;
+  color: ${props => props.theme.FONT_DARK_COLOR};
   margin-bottom: 25px;
 `;
 
