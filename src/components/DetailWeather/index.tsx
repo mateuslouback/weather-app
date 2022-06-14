@@ -1,16 +1,19 @@
 import React from 'react';
 import { Card, Title, Desc } from './styles';
 
-interface DetailWeather {
+interface DetailWeatherType {
   title: string;
-  desc: string | number | undefined;
+  desc: string | number;
 }
 
-export const DetailWeather = ({ title, desc }: DetailWeather): JSX.Element => {
-  return (
-    <Card>
-      <Title testID="detailWeather-title">{title}</Title>
-      <Desc testID="detailWeather-desc">{desc}</Desc>
-    </Card>
-  );
-};
+export const DetailWeather = ({
+  title,
+  desc,
+}: DetailWeatherType): JSX.Element => (
+  <Card>
+    <Title testID="detailWeather-title" fontWeight="semiBold">
+      {title}
+    </Title>
+    <Desc testID="detailWeather-desc">{desc}</Desc>
+  </Card>
+);

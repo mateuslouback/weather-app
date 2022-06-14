@@ -1,7 +1,8 @@
 import styled from 'styled-components/native';
+import { CustomText } from '../CustomText';
 
 export const Card = styled.View`
-  background-color: "rgba(255, 255, 255, .25)";
+  background-color: 'rgba(255, 255, 255, .25)';
   padding-horizontal: 15px;
   padding-vertical: 12px;
   height: 95px;
@@ -12,14 +13,12 @@ export const Card = styled.View`
   justify-content: space-between;
 `;
 
-export const Title = styled.Text`
-  color: #FFF;
+export const Title = styled(CustomText)`
+  color: ${props => props.theme.FONT_CLEAR_COLOR};
   font-size: 16px;
-  font-family: "Poppins-SemiBold";
 `;
 
-export const Desc = styled.Text`
-  color: #FFF;
+export const Desc = styled(CustomText)`
+  color: ${props => props.theme.FONT_CLEAR_COLOR};
   font-size: 30px;
-  font-family: "Poppins-Regular";
 `;
